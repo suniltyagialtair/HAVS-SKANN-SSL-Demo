@@ -1,0 +1,42 @@
+{
+  "site": "NUWR Goa",
+  "depth_m": 30,
+  "sample_rate_hz": 512,
+  "deployment_start": "2026-01-28",
+  "deployment_end": "2026-02-11",
+  "n_sessions": 292,
+  "n_ambient_windows": 5885,
+  "global_baseline_rms": {
+    "description": "15th-percentile ambient RMS across all 292 sessions \u2014 used as fixed detection baseline",
+    "percentile": 15,
+    "value": 0.00010593,
+    "p5": 9.49e-05,
+    "p25": 0.00011271,
+    "p50": 0.00012513,
+    "p90": 0.00013917
+  },
+  "rms_detector": {
+    "frame_sec": 2.0,
+    "hop_sec": 1.0,
+    "threshold_multiplier": 2.0,
+    "sustain_sec": 8.0,
+    "gap_bridge_sec": 5.0,
+    "min_event_sec": 3.0,
+    "baseline_source": "deployment_config.json \u2014 global P15 across all sessions"
+  },
+  "model": {
+    "architecture": "HybridSKEncoderV5",
+    "window_sec": 30.0,
+    "window_samples": 15360,
+    "embedding_dim": 512,
+    "latent_dim": 256,
+    "n_clusters": 5,
+    "cluster_labels": [
+      "C0",
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ]
+  }
+}

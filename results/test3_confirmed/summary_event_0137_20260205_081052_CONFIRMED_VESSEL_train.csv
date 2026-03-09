@@ -1,0 +1,2 @@
+clip_id,event_idx,start_sec,end_sec,duration_sec,n_windows,predicted,confidence_pct,prob_C0,prob_C1,prob_C2,prob_C3,prob_C4
+event_0137_20260205_081052_CONFIRMED_VESSEL_train_001,1,0.0,1515.0,1515.0,1,C0,31.5,0.3153,0.2234,0.1396,0.2264,0.0953
